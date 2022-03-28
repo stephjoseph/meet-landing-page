@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  footer {
+    background-image: url("./images/mobile/image-footer.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 768px) {
+    footer {
+      background-image: url("./images/tablet/image-footer.jpg");
+    }
+  }
+
+  @media (min-width: 1280px) {
+    footer {
+      background-image: url("./images/desktop/image-footer.jpg");
+    }
+  }
+}
